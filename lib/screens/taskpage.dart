@@ -47,10 +47,13 @@ class _TaskpageState extends State<Taskpage> {
                   ],
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.only(bottom: 12.0),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 12.0),
                 child: TextField(
-                  decoration: InputDecoration(
+                  onSubmitted: (value) {
+                    print("Field Value: $value");
+                  },
+                  decoration: const InputDecoration(
                     hintText: "Enter Description for the task...",
                     border: InputBorder.none,
                     contentPadding: EdgeInsets.symmetric(
@@ -71,7 +74,7 @@ class _TaskpageState extends State<Taskpage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.delete),
+        child: const Icon(Icons.delete),
         backgroundColor: const Color(0xFFFE3577),
         onPressed: () {
           print('hello');

@@ -40,6 +40,7 @@ class TaskCardWidget extends StatelessWidget {
 }
 
 class TodoWidget extends StatelessWidget {
+
   final String? text;
   final bool? isDone;
   TodoWidget({this.text, required this.isDone});
@@ -77,3 +78,4 @@ class TodoWidget extends StatelessWidget {
     );
   }
 }
+
